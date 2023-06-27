@@ -42,3 +42,11 @@ btnTimes.addEventListener("click", function() {
         result.textContent = n1 * n2;
     }
 });
+
+btnClear.addEventListener("click", function() {
+    inputClass[0].classList.remove("input-error");
+    inputClass[1].classList.remove("input-error");
+    number1.value = "" ;
+    number2.value = "" ;
+    result.textContent = 0;
+})
